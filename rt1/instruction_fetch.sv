@@ -26,9 +26,9 @@ input logic clk,
 input logic reset,
 input logic stall,
 input logic and_out,
-input logic pc_signed_offset,
-output logic address,
-output logic pc__new
+input logic [31:0] pc_signed_offset,
+output logic [31:0] address,
+output logic [31:0] pc__new
 
     );
  assign pc_new = address + 32'd4;
