@@ -20,12 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Decoder(
+module register_file(
 input logic clk,
 input logic reset,
 input logic [4:0] rs1_sel,
 input logic [4:0] rs2_sel,
-input logic rd_sel,
+input logic [4:0] rd_sel,
 input logic [31:0] wb_data,
 input logic reg_write,
 output logic [31:0] rs1_data,
